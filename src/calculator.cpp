@@ -1,6 +1,6 @@
 #include <cmath>
 
-#include "calculator.h"
+#include "include/calculator.h"
 
 using namespace std;
 
