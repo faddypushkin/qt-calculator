@@ -208,6 +208,9 @@ void MainWindow::SetText(const QString &text) {
     active_number_ = input_number_.toDouble();
 
     ui->l_result->setText(input_number_);
+    if (current_operation_ == Operation::NO_OPERATION) {
+        ui->l_formula->setText("");
+    }
 }
 
 void MainWindow::SetOperation(Operation op) {
