@@ -68,11 +68,10 @@ private:
 
 private:
     Ui::MainWindow* ui;
-    Calculator calculator_;
     QString input_number_;
+
+    Calculator calculator_;
     Number active_number_;
-
     std::optional<Number> mem_;
-
     Operation current_operation_ = Operation::NO_OPERATION;
 };
