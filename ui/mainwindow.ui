@@ -22,7 +22,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Калькулятор</string>
+   <string>Calculator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout" columnstretch="2,2,2,3" rowminimumheight="0,0,0,0,0,0,0,0,0" columnminimumwidth="0,0,0,0">
