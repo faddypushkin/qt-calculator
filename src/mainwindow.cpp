@@ -64,6 +64,10 @@ void MainWindow::on_btn_point_clicked() {
 }
 
 void MainWindow::on_btn_change_sign_clicked() {
+    if (input_number_.isEmpty()) {
+        return;
+    }
+
     SetText(input_number_.startsWith("-") ? input_number_.mid(1)
                                           : "-" + input_number_);
 }
@@ -170,7 +174,7 @@ QString MainWindow::RemoveTrailingZeroes(const QString &text) {
 }
 
 QString MainWindow::NormalizeNumber(const QString &text) {
-    if (text.isEmpty()) {
+    if (text.isEmpty() || text == "-" || text == "-0") {
         return "0";
     }
     if (text.startsWith('.')) {
