@@ -160,8 +160,7 @@ void MainWindow::on_btn_mr_clicked() {
         return;
     }
 
-    active_number_ = mem_.value();
-    ui->l_result->setText(QString::number(active_number_));
+    SetText(QString::number(mem_.value()));
 }
 
 QString MainWindow::RemoveTrailingZeroes(const QString &text) {
